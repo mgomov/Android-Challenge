@@ -11,4 +11,4 @@ The next thread grabs each image from the provided icon URLs and stores them in 
 When all the images are retrieved, I feed the JSON and retrieved images into a custom adapter and populate the ListView in the activity.
 
 #What I'd do differently
-I'd use a library for the web interactions to keep the code cleaner and smaller; the AsyncTasks are a bit of a mess to just leave hanging around like that. There's no feedback after the button press to indicate any sort of progress, so from a UX perspective that's not acceptable. 
+I'd use a library for the web interactions to keep the code cleaner and smaller; the AsyncTasks are a bit of a mess to just leave hanging around like that in the main source file. I think I could've done all of the web retrieval cleanly in one thread as well, but at the time it felt like it would be easier to read this way. There's no feedback after the button press to indicate any sort of progress, so from a UX perspective that's not acceptable. 
