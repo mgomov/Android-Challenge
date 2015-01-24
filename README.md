@@ -15,3 +15,5 @@ I haven't done any applications which interact with the internet on Android prio
 
 #What I'd do differently
 I'd use a library for the web interactions to keep the code cleaner and smaller; the AsyncTasks are a bit of a mess to just leave hanging around like that in the main source file. I think I could've done all of the web retrieval cleanly in one thread as well, but at the time it felt like it would be easier to read this way. There's no feedback after the button press to indicate any sort of progress, so from a UX perspective that's not acceptable. 
+
+I didn't specify an orientation in the app manifest, so there's misbehavior when the app changes from portrait to landscape and vice versa. The ListView elements aren't left-justified which makes the list uglier than it could be. 
