@@ -1,6 +1,3 @@
-# Android-Challenge
-Challenge
-
 #The Problem
 Pretty straightforward: grab some JSON from a URL, and generate a list where each element has icons and some text based on the JSON's content. 
 
